@@ -1,1 +1,15 @@
+.carousel-caption {
+  position: absolute;
+  margin: 0;
+  color: white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navbar,.card,.offcanvas {
+  background: hsla(0, 0%, 100%, 0);
+  backdrop-filter: blur(120px);
+}
+
 
