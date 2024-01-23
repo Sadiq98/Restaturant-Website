@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg  fixed-top bg-dark">
+    <div class="container-fluid bg-transparent">
+        <button class="navbar-toggler text-white-50" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+                <i class="fa-solid fa-bars text-white"></i>
+            </span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ">
+                <li class="nav-item ">
+                    <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#about">About Us</a>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Reach Us </a>
+                    <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item text-white" href="#contact">Contact US</a></li>
+                        <li><a class="dropdown-item text-white" href="#testimonial">Testimonial</a></li>
+                        <li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="align-items-center justify-content-center">
+            <img src="./icon/logo.png" alt="Logo" class="w-50">
+        </div>
+
+        <!-- Icons -->
+        <ul class="list-unstyled navbar-nav flex-sm-row d-flex justify-content-between align-items-center ">
+            <li class="nav-item me-2">
+                <a class="nav-link" href="#">
+                    <i class="fa-regular fa-heart text-white"></i>
+                </a>
+            </li>
+            <li class="nav-item me-2">
+                <a class="nav-link" href="#">
+
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight">
+                        <span class=" top-0 start-100 translate-middle badge rounded-pill bg-warning">1<span
+                                class="visually-hidden">unread messages</span>
+                        </span><i class="fas fa-shopping-cart text-white"></i>
+
+                    </button>
+
+
+                </a>
+            </li>
+            <li class="nav-item me-2">
+                <a class="nav-link" href="#">
+                    <button type="button" class="btn d-table" data-bs-toggle="modal" data-bs-target="#ModalForm">
+                        <i class="far fa-user text-white"></i>
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+<body class="bg-light">
+    <!-- carousal -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                class="active btn btn-outline-warning" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <video autoplay="autoplay" class="d-block w-100" muted="muted" loop="loop">
+                    <source src="./video/banner-1.mp4" type="video/mp4">
+                </video>
+                <div class="carousel-caption my-5">
+                    <div class="jumbotron">
+                        <h1 class="display-4">Food Lover</h1>
+                        <p class="lead fw-lighter">This is a simple hero unit, a simple jumbotron-style component for
+                            calling extra
+                            attention to featured content or information.</p>
+
+                        <p class="lead">
+                            <a class="btn btn-outline-warning btn-lg" href="#" role="button">BOOK TABLE</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="carousel-item my-5">
+                <img src="./img/banner-2.jpg" class="w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item my-5">
+                <img src="./img/banner-3.jpg" class="w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Menu -->
+    <div class="container my-5" id="menu">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <span class="text-warning">Menu Book</span>
+                    <h2 class="mt-2 text-uppercase">Our Main Menu</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row pt-60 my-4">
+            <div class="col-lg-12">
+
+                <!-- tabs -->
+                <ul class="nav nav-pills food-menu-category food-menu-category-two justify-content-center mb-3"
+                    id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true" class="btn btn-outline-warning">Starters</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">Main</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab  " data-bs-toggle="pill"
+                            data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                            aria-selected="false">Salads</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-snacks-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-snacks" type="button" role="tab" aria-controls="pills-snacks"
+                            aria-selected="false">Dessert</button>
+                    </li>
+                </ul>
+
+
+                <div class="tab-content pt-60" id="pills-tabContent">
+
+                    <!-- starters tab -->
+                    <div class="tab-pane fade active show" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+                        <div class="menu-book-box-wrap">
+                            <!-- Menu 1 -->
+                            <div class="row mb-4">
+                                <div class="col-lg-6">
+                                    <div class="card ">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <img src="./img/burger.jpg" class="w-100 rounded-3"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div
+                                                    class="col-lg-7 d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="row">
+                                                        <h4 class="">Waffle With Sliced Blueberries</h4>
+                                                    </div>
+                                                    <div class="row ">
+                                                        <p class="text-secondary">There are many variations of passages
+                                                            Lorem Ipsum form</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-lg-2 d-flex flex-column align-items-center justify-content-center">
+                                                    <h5 class="float-end text-warning">Rs. 230</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- Menu 2 -->
+
+                                <div class="col-lg-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <img src="./img/burger.jpg" class="w-100 rounded-3"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div
+                                                    class="col-lg-7 d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="row">
+                                                        <h4 class="">Waffle With Sliced Blueberries</h4>
+                                                    </div>
+                                                    <div class="row ">
+                                                        <p class="text-secondary">There are many variations of passages
+                                                            Lorem Ipsum form</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-lg-2 d-flex flex-column align-items-center justify-content-center">
+                                                    <h5 class="float-end text-warning">Rs. 230</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Menu 2 -->
+                            <div class="row mb-4">
+                                <div class="col-lg-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <img src="./img/burger.jpg" class="w-100 rounded-3"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div
+                                                    class="col-lg-7 d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="row">
+                                                        <h4 class="">Waffle With Sliced Blueberries</h4>
+                                                    </div>
+                                                    <div class="row ">
+                                                        <p class="text-secondary">There are many variations of passages
+                                                            Lorem Ipsum form</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-lg-2 d-flex flex-column align-items-center justify-content-center">
+                                                    <h5 class="float-end text-warning">Rs. 230</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- Menu 2 -->
+
+                                <div class="col-lg-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <img src="./img/burger.jpg" class="w-100 rounded-3"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div
+                                                    class="col-lg-7 d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="row">
+                                                        <h4 class="">Waffle With Sliced Blueberries</h4>
+                                                    </div>
+                                                    <div class="row ">
+                                                        <p class="text-secondary">There are many variations of passages
+                                                            Lorem Ipsum form</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-lg-2 d-flex flex-column align-items-center justify-content-center">
+                                                    <h5 class="float-end text-warning">Rs. 230</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Menu 3 -->
+                            <div class="row mb-4">
+                                <div class="col-lg-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <img src="./img/burger.jpg" class="w-100 rounded-3"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div
+                                                    class="col-lg-7 d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="row">
+                                                        <h4 class="">Waffle With Sliced Blueberries</h4>
+                                                    </div>
+                                                    <div class="row ">
+                                                        <p class="text-secondary">There are many variations of passages
+                                                            Lorem Ipsum form</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-lg-2 d-flex flex-column align-items-center justify-content-center">
+                                                    <h5 class="float-end text-warning">Rs. 230</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- Menu 2 -->
+
+                                <div class="col-lg-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <img src="./img/burger.jpg" class="w-100 rounded-3"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div
+                                                    class="col-lg-7 d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="row">
+                                                        <h4 class="">Waffle With Sliced Blueberries</h4>
+                                                    </div>
+                                                    <div class="row ">
+                                                        <p class="text-secondary">There are many variations of passages
+                                                            Lorem Ipsum form</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-lg-2 d-flex flex-column align-items-center justify-content-center">
+                                                    <h5 class="float-end text-warning">Rs. 230</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Main Tab -->
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="menu-book-box-wrap">
+                            <!-- Menu 1 -->
+                            <div class="row mb-4">
+                                <div class="col-lg-6">
+                                    <div class="card ">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <img src="./img/burger.jpg" class="w-100 rounded-3"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div
+                                                    class="col-lg-7 d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="row">
+                                                        <h4 class="">Waffle With Sliced Blueberries</h4>
+                                                    </div>
+                                                    <div class="row ">
+                                                        <p class="text-secondary">There are many variations of passages
+                                                            Lorem Ipsum form</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-lg-2 d-flex flex-column align-items-center justify-content-center">
+                                                    <h5 class="float-end text-warning">Rs. 230</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- Menu 2 -->
+
+                                <div class="col-lg-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <img src="./img/burger.jpg" class="w-100 rounded-3"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div
+                                                    class="col-lg-7 d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="row">
+                                                        <h4 class="">Waffle With Sliced Blueberries</h4>
+                                                    </div>
+                                                    <div class="row ">
+                                                        <p class="text-secondary">There are many variations of passages
+                                                            Lorem Ipsum form</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-lg-2 d-flex flex-column align-items-center justify-content-center">
+                                                    <h5 class="float-end">Rs. 230</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Menu 2 -->
+                            <div class="row mb-4">
+                                <div class="col-lg-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <img src="./img/burger.jpg" class="w-100 rounded-3"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div
+                                                    class="col-lg-7 d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="row">
+                                                        <h4 class="">Waffle With Sliced Blueberries</h4>
+                                                    </div>
+                                                    <div class="row ">
+                                                        <p class="text-secondary">There are many variations of passages
+                                                            Lorem Ipsum form</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-lg-2 d-flex flex-column align-items-center justify-content-center">
+                                                    <h5 class="float-end">Rs. 230</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- Menu 2 -->
+
+                                <div class="col-lg-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <img src="./img/burger.jpg" class="w-100 rounded-3"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div
+                                                    class="col-lg-7 d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="row">
+                                                        <h4 class="">Waffle With Sliced Blueberries</h4>
+                                                    </div>
+                                                    <div class="row ">
+                                                        <p class="text-secondary">There are many variations of passages
+                                                            Lorem Ipsum form</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-lg-2 d-flex flex-column align-items-center justify-content-center">
+                                                    <h5 class="float-end">Rs. 230</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Salad Tab -->
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div class="menu-book-box-wrap">
+                            <!-- Menu 1 -->
+                            <div class="row mb-4">
+                                <div class="col-lg-6">
+                                    <div class="card ">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <img src="./img/burger.jpg" class="w-100 rounded-3"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div
+                                                    class="col-lg-7 d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="row">
+                                                        <h4 class="">Waffle With Sliced Blueberries</h4>
+                                                    </div>
+                                                    <div class="row ">
+                                                        <p class="text-secondary">There are many variations of passages
+                                                            Lorem Ipsum form</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-lg-2 d-flex flex-column align-items-center justify-content-center">
+                                                    <h5 class="float-end">Rs. 230</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- Menu 2 -->
+
+                                <div class="col-lg-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <img src="./img/burger.jpg" class="w-100 rounded-3"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div
+                                                    class="col-lg-7 d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="row">
+                                                        <h4 class="">Waffle With Sliced Blueberries</h4>
+                                                    </div>
+                                                    <div class="row ">
+                                                        <p class="text-secondary">There are many variations of passages
+                                                            Lorem Ipsum form</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-lg-2 d-flex flex-column align-items-center justify-content-center">
+                                                    <h5 class="float-end">Rs. 230</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Menu 2 -->
+                            <div class="row mb-4">
+                                <div class="col-lg-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <img src="./img/burger.jpg" class="w-100 rounded-3"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div
+                                                    class="col-lg-7 d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="row">
+                                                        <h4 class="">Waffle With Sliced Blueberries</h4>
+                                                    </div>
+                                                    <div class="row ">
+                                                        <p class="text-secondary">There are many variations of passages
+                                                            Lorem Ipsum form</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-lg-2 d-flex flex-column align-items-center justify-content-center">
+                                                    <h5 class="float-end">Rs. 230</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- Menu 2 -->
+
+                                <div class="col-lg-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <img src="./img/burger.jpg" class="w-100 rounded-3"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div
+                                                    class="col-lg-7 d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="row">
+                                                        <h4 class="">Waffle With Sliced Blueberries</h4>
+                                                    </div>
+                                                    <div class="row ">
+                                                        <p class="text-secondary">There are many variations of passages
+                                                            Lorem Ipsum form</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-lg-2 d-flex flex-column align-items-center justify-content-center">
+                                                    <h5 class="float-end">Rs. 230</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Snacks Tab -->
+                    <div class="tab-pane food-menu-info-wrap fade" id="pills-snacks" role="tabpanel"
+                        aria-labelledby="pills-snacks-tab">
+                        <div class="menu-book-box-wrap">
+                            <!-- Menu 1 -->
+                            <div class="row mb-4">
+                                <div class="col-lg-6">
+                                    <div class="card ">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <img src="./img/burger.jpg" class="w-100 rounded-3"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div
+                                                    class="col-lg-7 d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="row">
+                                                        <h4 class="">Waffle With Sliced Blueberries</h4>
+                                                    </div>
+                                                    <div class="row ">
+                                                        <p class="text-secondary">There are many variations of passages
+                                                            Lorem Ipsum form</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-lg-2 d-flex flex-column align-items-center justify-content-center">
+                                                    <h5 class="float-end">Rs. 230</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- Menu 2 -->
+
+                                <div class="col-lg-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <img src="./img/burger.jpg" class="w-100 rounded-3"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div
+                                                    class="col-lg-7 d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="row">
+                                                        <h4 class="">Waffle With Sliced Blueberries</h4>
+                                                    </div>
+                                                    <div class="row ">
+                                                        <p class="text-secondary">There are many variations of passages
+                                                            Lorem Ipsum form</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-lg-2 d-flex flex-column align-items-center justify-content-center">
+                                                    <h5 class="float-end">Rs. 230</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Menu 2 -->
+                            <div class="row mb-4">
+                                <div class="col-lg-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <img src="./img/burger.jpg" class="w-100 rounded-3"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div
+                                                    class="col-lg-7 d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="row">
+                                                        <h4 class="">Waffle With Sliced Blueberries</h4>
+                                                    </div>
+                                                    <div class="row ">
+                                                        <p class="text-secondary">There are many variations of passages
+                                                            Lorem Ipsum form</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-lg-2 d-flex flex-column align-items-center justify-content-center">
+                                                    <h5 class="float-end">Rs. 230</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- Menu 2 -->
+
+                                <div class="col-lg-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <img src="./img/burger.jpg" class="w-100 rounded-3"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div
+                                                    class="col-lg-7 d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="row">
+                                                        <h4 class="">Waffle With Sliced Blueberries</h4>
+                                                    </div>
+                                                    <div class="row ">
+                                                        <p class="text-secondary">There are many variations of passages
+                                                            Lorem Ipsum form</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-lg-2 d-flex flex-column align-items-center justify-content-center">
+                                                    <h5 class="float-end">Rs. 230</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About US -->
+    <div class="container my-5 p-3" id="about">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="quality-content qulity-image" data-sr-id="6">
+                    <img src="/img/egg.png" alt="" style="width: 400px;">
+                </div>
+            </div>
+            <div class="col-lg-8 d-flex align-items-center justify-content-center">
+                <div>
+                    <h1 class="text-warning">Our food quality</h1>
+                    <p>It is very important for the customer to pay attention to the adipiscing process. What
+                        flexibility the blinded architect of the body escapes from great troubles, so happy troubles
+                        which, they do not know why? Troubles, from the mistake of life to make who who. The company
+                        itself is a very successful company. Therefore, every advantage must be spared, because they
+                        are the least of any kind. They are, born of great hardships themselves, pain criticizes the
+                        exercise, they do not know the error hates the right!</p>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Testimonial -->
+    <section id="testimonial">
+
+        <div class="row d-flex justify-content-center">
+
+            <div class="col-md-10 col-xl-8 text-center">
+                <p class=" text-warning fw-light">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                <h2 class="mb-4 text-uppercase">Testimonials</h2>
+
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-md-4 mb-5 mb-md-0">
+                <div class="d-flex justify-content-center mb-4">
+                    <img src="/img/1.jpg" class="rounded-circle shadow-1-strong" width="150" height="150" />
+                </div>
+                <h5 class="mb-3">Maria Smantha</h5>
+                <h6 class="text-warning fw-light mb-3">Developer</h6>
+                <p class="px-xl-3">
+                    <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
+                    tenetur.
+                </p>
+                <ul class="list-unstyled d-flex justify-content-center mb-0">
+                    <li>
+                        <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-star-half-alt fa-sm text-warning"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-5 mb-md-0">
+                <div class="d-flex justify-content-center mb-4">
+                    <img src="/img/3.jpg" class="rounded-circle shadow-1-strong" width="150" height="150" />
+                </div>
+                <h5 class="mb-3">Lisa Cudrow</h5>
+                <h6 class="text-warning fw-light mb-3">Customer</h6>
+                <p class="px-xl-3">
+                    <i class="fas fa-quote-left pe-2"></i>Ut enim ad minima veniam, quis nostrum
+                    exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid commodi.
+                </p>
+                <ul class="list-unstyled d-flex justify-content-center mb-0">
+                    <li>
+                        <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-0">
+                <div class="d-flex justify-content-center mb-4">
+                    <img src="/img/5.jpg" class="rounded-circle shadow-1-strong" width="150" height="150" />
+                </div>
+                <h5 class="mb-3">John Smith</h5>
+                <h6 class="text-warning fw-light mb-3">Food Blogger</h6>
+                <p class="px-xl-3">
+                    <i class="fas fa-quote-left pe-2"></i>At vero eos et accusamus et iusto odio
+                    dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.
+                </p>
+                <ul class="list-unstyled d-flex justify-content-center mb-0">
+                    <li>
+                        <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                        <i class="far fa-star fa-sm text-warning"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- contact us -->
+    <div class="row my-5" id="contact">
+        <div class="container my-5 m-0  ">
+            <div class="row text-center text-lg-start">
+                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                    <div>
+                        <h1>Reserve Your Own Private Table</h1>
+                        <p class="text-black fw-light">There are many variations of passages of Lorem Ipsum form, by
+                            injected humour, or randomized
+                            words which don't look even slightly believable. </p>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="card p-4">
+                        <div class="card-body">
+                            <div class="row mb-3">
+                                <div class="col-lg-6">
+                                    <input class="form-control" type="text" name="" id="" placeholder="Your Name">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input class="form-control" type="tel" name="" id="" placeholder="Phone">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-lg-6">
+                                    <input class="form-control" type="email" name="" id="" placeholder="Email Address">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input class="form-control" type="text" name="" id="" placeholder="Date">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-lg-6">
+                                    <select class="form-select" aria-label="Default select example"
+                                        placeholder="Persons">
+                                        <option selected value="" disabled>Select Persons</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input class="form-control" type="text" name="" id="" placeholder="Time">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <button class=" btn btn-warning text-white">Confirm Reservation</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Form -->
+    <div class="modal fade" id="ModalForm" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-4 bg-light">
+                <!-- Login Form -->
+                <form action="">
+
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="Username">Username<span class="">*</span></label>
+                            <input type="text" name="username" class="form-control" id="Username"
+                                placeholder="Enter Username">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="Password">Password<span class="">*</span></label>
+                            <input type="password" name="password" class="form-control" id="Password"
+                                placeholder="Enter Password">
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-check-input btn-outline-warning" type="checkbox" value="" id="remember"
+                                required>
+                            <label class="form-check-label" for="remember">Remember Me</label>
+                            <a href="#" class="float-end">Forgot Password</a>
+                        </div>
+                    </div>
+                    <div class="modal-footer pt-4">
+                        <button type="button" class="btn btn-warning text-white mx-auto w-100">Login</button>
+                    </div>
+                    <p class="text-center">Not yet account, <a href="#">Signup</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-warning" id="offcanvasRightLabel">Cart</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="card bg-light p-2 mb-3">
+                <div class="row align-items-center">
+                    <div class="col-lg-3">
+                        <img src="img/burger.jpg" class="w-100 rounded-3" alt="Aloo Sabzi">
+                    </div>
+                    <div class="col-lg-4">
+                        <span class="d-block">Aloo Sabzi</span>
+                    </div>
+                    <div class="col-lg-2">
+                        <span class="d-block">₹30</span>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button type="button" class="btn btn-sm btn-warning text-white fw-bolder"
+                                onclick="changeQuantity(0, -1)">-</button>
+                            <div class="count">1</div>
+                            <button type="button" class="btn btn-sm btn-warning text-white fw-bolder"
+                                onclick="changeQuantity(0, 1)">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class="card bg-light p-2">
+                <div class="row align-items-center">
+                    <div class="col-lg-3">
+                        <img src="img/burger.jpg" class="w-100 rounded-3" alt="Aloo Sabzi">
+                    </div>
+                    <div class="col-lg-4">
+                        <span class="d-block">Aloo Sabzi</span>
+                    </div>
+                    <div class="col-lg-2">
+                        <span class="d-block">₹30</span>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button type="button" class="btn btn-sm btn-warning text-white fw-bolder"
+                                onclick="changeQuantity(0, -1)">-</button>
+                            <div class="count">1</div>
+                            <button type="button" class="btn btn-sm btn-warning text-white fw-bolder"
+                                onclick="changeQuantity(0, 1)">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="text-black text-center text-lg-start  mt-5 ">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row mt-4">
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">About company</h5>
+
+                    <p>
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        voluptatum deleniti atque corrupti.
+                    </p>
+
+                    <p>
+                        Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
+                        molestias.
+                    </p>
+
+                    <div class="mt-4">
+                        <!-- Facebook -->
+                        <a type="button" class="btn btn-floating btn-warning btn-lg"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <!-- Dribbble -->
+                        <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-dribbble"></i></a>
+                        <!-- Twitter -->
+                        <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-twitter"></i></a>
+                        <!-- Google + -->
+                        <a type="button" class="btn btn-floating btn-warning btn-lg"><i
+                                class="fab fa-google-plus-g"></i></a>
+                        <!-- Linkedin -->
+                    </div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+
+                    <div class="container">
+
+                        <card class="card border-0">
+                            <iframe class="card-img-top"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2038.8869354068509!2d15.21545545625287!3d59.26803797168206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465c14e4a4c8e193%3A0xf18609c2d9ee261f!2sLa%20Santa%20Maria%20Tattoos%20%26%20Art!5e0!3m2!1ssv!2sse!4v1568297791174!5m2!1ssv!2sse"
+                                frameborder="0" style="border:0;" allowfullscreen="">
+                            </iframe>
+                            <div class="card-body">
+                                <table>
+                                    <tr>
+                                        <td><i class="fas fa-map-marker-alt"></i></td>
+                                        <td>
+                                            <address>
+                                                Mumbai, 40001,
+                                                IN
+                                            </address>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="far fa-envelope me-2"></i></td>
+                                        <td>foodlover@example.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fas fa-phone me-2"></i></td>
+                                        <td>+ 91 111 222
+                                            333 444</td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                        </card>
+                    </div>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+                    <table class="table text-center">
+                        <tbody class="font-weight-normal">
+                            <tr>
+                                <td>Mon - Thu:</td>
+                                <td>8am - 9pm</td>
+                            </tr>
+                            <tr>
+                                <td>Fri - Sat:</td>
+                                <td>8am - 1am</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday:</td>
+                                <td>9am - 10pm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+            <!-- Grid container -->
+            <hr>
+            <!-- Copyright -->
+            <div class="text-center p-3">
+                © 2024 Food Lover
+            </div>
+            <!-- Copyright -->
+    </footer>
+</body>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/script.js"></script>
+
+</html>
